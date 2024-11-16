@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bithotex Technology</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/img/shortcut.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav-to-bottom">
+        <a href="#contact">
+          <img src="./assets/img/arrow-down-desktop.png" alt="|" />
+        </a>
+      </div>
+      <div class="burger-menu">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#home" class="nav-list__link nav-home-burger">Home</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#why" class="nav-list__link nav-why-burger">Why us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#services" class="nav-list__link nav-services-burger"
+                >Services</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="#contact" class="nav-list__link nav-contact-burger"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="header__lang-area">
+            <div class="header__lang-display">
+              <a href="#" id="langLink">
+                <img
+                  id="langImgDisplay"
+                  src="./assets/img/british.png"
+                  alt="English"
+                />
+              </a>
+              <p id="langTextDisplay">English</p>
+            </div>
+            <a href="#" id="langLink">
+              <img src="./assets/img/arrow-down.svg" alt="|" />
+            </a>
+            <div class="header__lang-popup" id="langPopup">
+              <ul>
+                <li id="langSwitchLinkEn" value="english">
+                  <a href="#">English</a>
+                </li>
+                <li id="langSwitchLinkRu" value="russian">
+                  <a href="#">Русский</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__contact-buttons">
+<a href="tel:971585779967" class="header__call-button" target="_blank">
+            <svg
+              width="24"
+              height="27"
+              viewBox="0 0 24 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <mask
+                id="mask0_67_296"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="24"
+                height="27"
+              >
+                <rect
+                  y="0.516205"
+                  width="24"
+                  height="25.92"
+                  fill="url(#pattern0_67_296)"
+                />
+              </mask>
+              <g mask="url(#mask0_67_296)">
+                <rect
+                  class="header__call-button-icon-color"
+                  x="-2.87988"
+                  y="1.55301"
+                  width="29.76"
+                  height="24.8832"
+                  fill="#1EC61E"
+                />
+              </g>
+              <defs>
+                <pattern
+                  id="pattern0_67_296"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_67_296"
+                    transform="matrix(0.0111111 0 0 0.0102881 0 0.037037)"
+                  />
+                </pattern>
+                <image
+                  id="image0_67_296"
+                  width="90"
+                  height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADnklEQVR4nO2cW4hNURiAPwy55hYZ8eCalIyXSW6l5BJJKTE1pEhuefDkRZQXyYQ8SblGLnkgohRFhgfk8qBchyZymeQ+LrO0ml+DmWPW2Wtve591/q/+x7PPWt/ZZ629//WvBYqiKIqiKIqiKEVEe6ASOAu8At4AB4EBaTcsJKYCDwHTQjwB+qbdwEKnLVAFNOSQbCQOp93QQqYDcLwVwUbC/hAT025wIdIOOOIo2UjcAUrSbnihsTlPyUZiedoNLyRmOozJueI10CvtDhQCnYFHESUbiZ1pd6IQWOcp2QDfgVFpdyTrTxm1MYg2wIW0O5NlpsUk2UjMS7tDWWVbzKJrZMxX/uJSzKINsFEtN+d5AqI/A4NU9p98SUC0kdd45Tc+JSTayESrCK8TFH1X8yBNXEtQtAGW6C3dyIGERZ9X0Y2sTFj0DRXdyPCERe9S0U34Zu5MjvgGjFTRTWxISHSVSv6TgZLmjFPyC6C7im7O6ZhFV6rklhkXo+TLQBsVnZtzMUj+DpSp5H8zNgbRu1WyG4c8RY9X0W6UAm89RA9S0e6s9hA9W0XnVxoWNat3RT6vODIEeBdR9ma1nB9LPYaQxSo7P456LNCWq2x3egOPI8p+Jk8xiiOjgY8RZd8Geqppdyo8xutqoIvKdmerh+xTuiLuTolsgzMRY59m9dzpJguuUWXvUNnulHo8iRgpcbAbRRUHhgIvPcdsLe91ZIJn7Z4tGe6ht7UbM4B6D9m3gP4RZds9M3ukxu+CpAyC3vM4B/jqIbs2z9d1+y/YLnUjf1/rnvz4wTI3R8ddw9ZpL2rlO+yC70IpZXCZAwYTKIuAHx6yjdypLeWzx8jqej7XqpfrdSVAlsUgu1qGo2HAZGCvZ4FPTai7xSo8h5Gk4qIkyIJinucEmVTYf9t+oA8BMUsWAEwGow5YE9L65vSENyT5xk1gEgG9Qb7JgNRc0SDHFgVxRtQIz0TU/4iaUE4/KwWuZ0Boa5nFYPLZZzMgNFfYs/2CocRzWSzJsBtcg2M+8CEDcn8Pu/MhSMoyNkkuIPAinRMZkHw/9Hz2L2wK9H2Kz9L2LNaiYRhwNQXRWyhC2gGrPHce5BPH5ODboqWfZNqinjDpEnZu6Jh2R7NCOXAmgTF5U7Hfyf/anncyhu3U9vBxPYbIAZv4WQ88yFPwU2At0MnlS5TmFVMrZCyvlhXyOomnUu9hX/enaBmaoiiKoiiKoiiKoigKLfITfKfz4+dwKvgAAAAASUVORK5CYII="
+                />
+              </defs>
+            </svg>
+            +971585779967
+          </a>
+          <a href="https://wa.me/971585779967" target="_blank" class="header__call-button header__call-button_green">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0_189_4" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+            <rect width="28" height="28" fill="url(#pattern0_189_4)"/>
+            </mask>
+            <g mask="url(#mask0_189_4)">
+            <rect x="-3" y="-6" width="37" height="38" fill="white"/>
+            </g>
+            <defs>
+            <pattern id="pattern0_189_4" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_189_4" transform="translate(-0.109589 -0.123288) scale(0.0136986)"/>
+            </pattern>
+            <image id="image0_189_4" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFPUlEQVR4nO2dW4hWVRTHfzVeCmuCkqbIoqwgKEjyEt1UaoqwiIxuWBZhZjBdtDCoKIQgTJCkkqyHiuqlB61GSUt6MHqImJrU7lDZxW7DTFaU2Zg7NixBhm/OZc7a+6zvm/2D/4vMnL3O//tmn73XWmcLiUQikUgkEolEIpEoTBswHVgArABeA7YBXwEDwB7RgPzbNvmZx+R3psk1Eg2YBCwG1gO/A66idgHdwN3AcYxyDgXmA5uB/xTMHU57gbeAG4FDGEUcJt+0nQHNHU6/AsuAI2hhxgJLgf4aDB4qH8O9ElNLcQGw3YDBQ/U50EkL4OfE1cA+A6YOJx/bE8B4mpQTgfcMGOkK6gPgFJqMTqVlmossvyy8kCZhLrDbgGluhPKboeswzm2B18Qukvw9LMQoV8rmoG6TnKLZ12IMP6/9Y8AcF2AauQQjnNqkDz5X4gF5ct0mj5dlkWtx9dS9zl5twAQXSX5TU9u22vKOzynL3+us2CaPAbYauHkXWdtjJ6KWGrhpV5OWxDL5cKVU5x/AQ8BsYKpMRc8aMDJPfZJTD859SkumqQ2ufRDwrgEz8+Rz2cHLTz8rPFTmZIxxhQEj8/Rj6LLYfIUg1+SM4SvYOwyYmacbQhq9uWJwu4GOAuPcb8DIPG0K2RJQNTO3tuBYRzdB7sQn0I4NYfRiheDuKDHeywbM1LyfwqxXCKyzxHjnGjAyT6+G2AnuUghsWslxPzZgZpYGtNvPpisFNrPkuBsMmJmnRvuBEbOghiXRpCapPd6iafQKpaCeLDFVvWnAxCJarmn060pB7ZBtdh5PGTCwqNZpGq2ZEp2ZM9bNBswro15No79RDKw7Z6xlBswro681jdbuAJ2VMVY78J0BA8ukTdXYE+DPrS1jvDkGDCwqnypQYzBAgA/kjLlmNBr9Z4AAB4EZGWP62twWA0ZGnTp+ChTkp1JMyMrifWLAzGgPw96AgT6fM3aHcbNVl3ehcw6LcsY/EthY4nqvABOBS4G3m2nD8njgYP8t0Ex4MPBIgeJDT4Pp6GzZ3e6zvgXXSiq5DPlGySkFYpmR0e/nC8fHZ/zuGVJQGLSaVDorgtFOnuBnFoinTV7QPPBNL7/WP7/g/UwGXlCK2XujRptS4t8pmo0kqC4HXpQ2hbKstZb41ypluRJdTFm9H1o8Z+lBuJ9FEY12UmX2BeGQVF2RdIUIqqOmd1TeCHRCwdiK06H34hgCUVfVo1/KYEWKBkW5rGJMfl0fjKtrMtqJPgSukjV1FfzpBp9VjGUeARkHfF+z2U6WdbcDR43gHiYrVIx2xjj7Q6NjySnuKDfIt2tCgS9Jl1IR4x4iMCFgNs9V0N/AO7IlnivvPp4jU81KxQ7VvgIfqhoLDRjrapI/PScabYGKAc64PpKek2icZuCm3Wh4/e1OAzfuImsVNRAz7+EM6H1ZtURl3Cibn38DTqIGZhu4eRdJPsd9MTXxqAEDXAT5ktk11EiPARNcYPnM3K11mjyxRc5McjmdR7Uf8XO9ASNc4AeffwbVTtXSjzOsHgtH+uznBwOGuAA7vlV1rJOzeiJci2krcB7GWFJhLboFeFiu8a0Bg/skCxc1QVSUMr1v/uz9Z2Qd2t6gKHoT8EUNBv8ir24MjckMvmzzV8YNfAk8LTXFouWlMfJBrAv8PuFe+ZLMa4aj5y9qcDDIS9J3doLC9dvlLJBupcMKB+Q97a6QLQEheFC6Me8CTo9QVJgijZUrpSbYK+WzgQPm/X6Zonrlr2K5fPC+Fy799yCJRCKRSCQSiUQiQUH+Bw//tmGudJchAAAAAElFTkSuQmCC"/>
+            </defs>
+            </svg>
+            WhatsApp
+          </a>
+          </div>
+          
+        </nav>
+        <a href="#" id="burger-close">
+          <img src="./assets/img/close.svg" alt="X" />
+        </a>
+      </div>
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__left">
+            <a href="#">
+              <img src="./assets/img/logo.png" alt="BITHOTEX" />
+            </a>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#home" class="nav-list__link nav-home">Home</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#why" class="nav-list__link nav-why">Why us</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#services" class="nav-list__link nav-services"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-list__item">
+                  <a
+                    href="#contact"
+                    id="contact-link"
+                    class="nav-list__link nav-contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__right">
+            <div class="header__lang-area">
+              <div class="header__lang-display">
+                <a href="#" id="langLink">
+                  <img
+                    id="langImgDisplay"
+                    src="./assets/img/british.png"
+                    alt="English"
+                  />
+                </a>
+                <p id="langTextDisplay">English</p>
+              </div>
+              <a href="#" id="langLink">
+                <img src="./assets/img/arrow-down.svg" alt="|" />
+              </a>
+              <div class="header__lang-popup" id="langPopup">
+                <ul>
+                  <li id="langSwitchLinkEn" value="english">
+                    <a href="#">English</a>
+                  </li>
+                  <li id="langSwitchLinkRu" value="russian">
+                    <a href="#">Русский</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__call-buttons">
+              <a href="tel:971585779967" target="_blank" class="header__call-button">
+              <svg
+                width="24"
+                height="27"
+                viewBox="0 0 24 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask
+                  id="mask0_67_296"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="27"
+                >
+                  <rect
+                    y="0.516205"
+                    width="24"
+                    height="25.92"
+                    fill="url(#pattern0_67_296)"
+                  />
+                </mask>
+                <g mask="url(#mask0_67_296)">
+                  <rect
+                    class="header__call-button-icon-color"
+                    x="-2.87988"
+                    y="1.55301"
+                    width="29.76"
+                    height="24.8832"
+                    fill="#1EC61E"
+                  />
+                </g>
+                <defs>
+                  <pattern
+                    id="pattern0_67_296"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_67_296"
+                      transform="matrix(0.0111111 0 0 0.0102881 0 0.037037)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_67_296"
+                    width="90"
+                    height="90"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADnklEQVR4nO2cW4hNURiAPwy55hYZ8eCalIyXSW6l5BJJKTE1pEhuefDkRZQXyYQ8SblGLnkgohRFhgfk8qBchyZymeQ+LrO0ml+DmWPW2Wtve591/q/+x7PPWt/ZZ629//WvBYqiKIqiKIqiKEVEe6ASOAu8At4AB4EBaTcsJKYCDwHTQjwB+qbdwEKnLVAFNOSQbCQOp93QQqYDcLwVwUbC/hAT025wIdIOOOIo2UjcAUrSbnihsTlPyUZiedoNLyRmOozJueI10CvtDhQCnYFHESUbiZ1pd6IQWOcp2QDfgVFpdyTrTxm1MYg2wIW0O5NlpsUk2UjMS7tDWWVbzKJrZMxX/uJSzKINsFEtN+d5AqI/A4NU9p98SUC0kdd45Tc+JSTayESrCK8TFH1X8yBNXEtQtAGW6C3dyIGERZ9X0Y2sTFj0DRXdyPCERe9S0U34Zu5MjvgGjFTRTWxISHSVSv6TgZLmjFPyC6C7im7O6ZhFV6rklhkXo+TLQBsVnZtzMUj+DpSp5H8zNgbRu1WyG4c8RY9X0W6UAm89RA9S0e6s9hA9W0XnVxoWNat3RT6vODIEeBdR9ma1nB9LPYaQxSo7P456LNCWq2x3egOPI8p+Jk8xiiOjgY8RZd8Geqppdyo8xutqoIvKdmerh+xTuiLuTolsgzMRY59m9dzpJguuUWXvUNnulHo8iRgpcbAbRRUHhgIvPcdsLe91ZIJn7Z4tGe6ht7UbM4B6D9m3gP4RZds9M3ukxu+CpAyC3vM4B/jqIbs2z9d1+y/YLnUjf1/rnvz4wTI3R8ddw9ZpL2rlO+yC70IpZXCZAwYTKIuAHx6yjdypLeWzx8jqej7XqpfrdSVAlsUgu1qGo2HAZGCvZ4FPTai7xSo8h5Gk4qIkyIJinucEmVTYf9t+oA8BMUsWAEwGow5YE9L65vSENyT5xk1gEgG9Qb7JgNRc0SDHFgVxRtQIz0TU/4iaUE4/KwWuZ0Boa5nFYPLZZzMgNFfYs/2CocRzWSzJsBtcg2M+8CEDcn8Pu/MhSMoyNkkuIPAinRMZkHw/9Hz2L2wK9H2Kz9L2LNaiYRhwNQXRWyhC2gGrPHce5BPH5ODboqWfZNqinjDpEnZu6Jh2R7NCOXAmgTF5U7Hfyf/anncyhu3U9vBxPYbIAZv4WQ88yFPwU2At0MnlS5TmFVMrZCyvlhXyOomnUu9hX/enaBmaoiiKoiiKoiiKoigKLfITfKfz4+dwKvgAAAAASUVORK5CYII="
+                  />
+                </defs>
+              </svg>
+              +971585779967
+            </a>
+            <a href="https://wa.me/971585779967" target="_blank" class="header__call-button header__call-button_green">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_189_4" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+<rect width="28" height="28" fill="url(#pattern0_189_4)"/>
+</mask>
+<g mask="url(#mask0_189_4)">
+<rect x="-3" y="-6" width="37" height="38" fill="white"/>
+</g>
+<defs>
+<pattern id="pattern0_189_4" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_189_4" transform="translate(-0.109589 -0.123288) scale(0.0136986)"/>
+</pattern>
+<image id="image0_189_4" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFPUlEQVR4nO2dW4hWVRTHfzVeCmuCkqbIoqwgKEjyEt1UaoqwiIxuWBZhZjBdtDCoKIQgTJCkkqyHiuqlB61GSUt6MHqImJrU7lDZxW7DTFaU2Zg7NixBhm/OZc7a+6zvm/2D/4vMnL3O//tmn73XWmcLiUQikUgkEolEIpEoTBswHVgArABeA7YBXwEDwB7RgPzbNvmZx+R3psk1Eg2YBCwG1gO/A66idgHdwN3AcYxyDgXmA5uB/xTMHU57gbeAG4FDGEUcJt+0nQHNHU6/AsuAI2hhxgJLgf4aDB4qH8O9ElNLcQGw3YDBQ/U50EkL4OfE1cA+A6YOJx/bE8B4mpQTgfcMGOkK6gPgFJqMTqVlmossvyy8kCZhLrDbgGluhPKboeswzm2B18Qukvw9LMQoV8rmoG6TnKLZ12IMP6/9Y8AcF2AauQQjnNqkDz5X4gF5ct0mj5dlkWtx9dS9zl5twAQXSX5TU9u22vKOzynL3+us2CaPAbYauHkXWdtjJ6KWGrhpV5OWxDL5cKVU5x/AQ8BsYKpMRc8aMDJPfZJTD859SkumqQ2ufRDwrgEz8+Rz2cHLTz8rPFTmZIxxhQEj8/Rj6LLYfIUg1+SM4SvYOwyYmacbQhq9uWJwu4GOAuPcb8DIPG0K2RJQNTO3tuBYRzdB7sQn0I4NYfRiheDuKDHeywbM1LyfwqxXCKyzxHjnGjAyT6+G2AnuUghsWslxPzZgZpYGtNvPpisFNrPkuBsMmJmnRvuBEbOghiXRpCapPd6iafQKpaCeLDFVvWnAxCJarmn060pB7ZBtdh5PGTCwqNZpGq2ZEp2ZM9bNBswro15No79RDKw7Z6xlBswro681jdbuAJ2VMVY78J0BA8ukTdXYE+DPrS1jvDkGDCwqnypQYzBAgA/kjLlmNBr9Z4AAB4EZGWP62twWA0ZGnTp+ChTkp1JMyMrifWLAzGgPw96AgT6fM3aHcbNVl3ehcw6LcsY/EthY4nqvABOBS4G3m2nD8njgYP8t0Ex4MPBIgeJDT4Pp6GzZ3e6zvgXXSiq5DPlGySkFYpmR0e/nC8fHZ/zuGVJQGLSaVDorgtFOnuBnFoinTV7QPPBNL7/WP7/g/UwGXlCK2XujRptS4t8pmo0kqC4HXpQ2hbKstZb41ypluRJdTFm9H1o8Z+lBuJ9FEY12UmX2BeGQVF2RdIUIqqOmd1TeCHRCwdiK06H34hgCUVfVo1/KYEWKBkW5rGJMfl0fjKtrMtqJPgSukjV1FfzpBp9VjGUeARkHfF+z2U6WdbcDR43gHiYrVIx2xjj7Q6NjySnuKDfIt2tCgS9Jl1IR4x4iMCFgNs9V0N/AO7IlnivvPp4jU81KxQ7VvgIfqhoLDRjrapI/PScabYGKAc64PpKek2icZuCm3Wh4/e1OAzfuImsVNRAz7+EM6H1ZtURl3Cibn38DTqIGZhu4eRdJPsd9MTXxqAEDXAT5ktk11EiPARNcYPnM3K11mjyxRc5McjmdR7Uf8XO9ASNc4AeffwbVTtXSjzOsHgtH+uznBwOGuAA7vlV1rJOzeiJci2krcB7GWFJhLboFeFiu8a0Bg/skCxc1QVSUMr1v/uz9Z2Qd2t6gKHoT8EUNBv8ir24MjckMvmzzV8YNfAk8LTXFouWlMfJBrAv8PuFe+ZLMa4aj5y9qcDDIS9J3doLC9dvlLJBupcMKB+Q97a6QLQEheFC6Me8CTo9QVJgijZUrpSbYK+WzgQPm/X6Zonrlr2K5fPC+Fy799yCJRCKRSCQSiUQiQUH+Bw//tmGudJchAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+
+              WhatsApp
+            </a>
+            </div>
+            
+            <div class="header__burger">
+              <img src="./assets/img/burger-menu.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="intro" id="home">
+          <div class="intro__container _container">
+            <div class="intro__left">
+              <img src="./assets/img/intro-1n.jpg" alt="" />
+              <div></div>
+            </div>
+            <div class="intro__right">
+              <div class="intro__right-text">
+                <div class="intro__title-wrapper">
+                  <h1 class="intro__title" id="intro-title-1">
+                    We provide our
+                  </h1>
+                  <span class="green" id="intro-title-2">world class</span>
+                  <br />
+                  <span class="bold" id="intro-title-3">IT services</span>
+                </div>
+                <hr />
+                <p class="intro__subtitle">
+                  Our IT services are not just about technology; they're a form
+                  of art. Our specialists are like IT artists: they create,
+                  optimize, and transform tasks into masterpieces. And if any
+                  questions arise, rest assured, we have a backup plan and a
+                  touch of IT magic!
+                </p>
+                <a href="#why" class="intro__btn">
+                  Learn more
+                  <div>
+                    <img src="./assets/img/arrow-right.svg" alt="->" />
+                  </div>
+                </a>
+              </div>
+              <div class="intro__bottom-img-wrapper">
+                <img
+                  class="intro__bottom-img"
+                  src="./assets/img/intro-2r.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="intro__arrow-down-area-mobile">
+            <a href="#contact" id="linkToContact">
+              <img src="./assets/img/arrow-down-link.png" alt="|" />
+            </a>
+          </div>
+        </section>
+        <section class="hire" id="why">
+          <div class="hire__container _container">
+            <h2 class="hire__title">Why hire us?</h2>
+            <div class="hire__main">
+              <div class="hire__cards">
+                <div class="hire__card card-hire">
+                  <h3 id="hire-card-title-1">
+                    Pro team with 10+ years experience
+                  </h3>
+                  <p id="hire-card-subtitle-1">
+                    At Bithotex, our team is a mix of seasoned professionals,
+                    each with over a decade of experience. We've seen a lot, and
+                    we're here to help you navigate the ever-changing
+                    technological landscape with ease.
+                  </p>
+                  <span>1</span>
+                </div>
+                <div class="hire__card card-hire">
+                  <h3 id="hire-card-title-2">100+ positive ratings</h3>
+                  <p id="hire-card-subtitle-2">
+                    Our clients choose us not just for our tech skills, but
+                    because we understand their business. It’s this perfect
+                    blend of expertise and insight that keeps them coming back
+                    and sharing their positive experiences!
+                  </p>
+                  <span>2</span>
+                </div>
+                <div class="hire__card card-hire">
+                  <h3 id="hire-card-title-3">
+                    Individual approach to every client
+                  </h3>
+                  <p id="hire-card-subtitle-3">
+                    At our IT company, we believe in the power of personalized
+                    service. That's why we take the time to understand each
+                    client individually, tailoring our solutions to meet their
+                    unique needs.
+                  </p>
+                  <span>3</span>
+                </div>
+              </div>
+              <div class="hire__img-area">
+                <img src="./assets/img/hire-1n.jpg" alt="" />
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services" id="services">
+          <div class="services__container _container">
+            <h2 class="services__title">Services we provide</h2>
+            <p class="services__subtitle">
+              At our company, we pride ourselves on delivering exceptional
+              services through a team of dedicated professionals who genuinely
+              care about our clients’ needs
+            </p>
+            <div class="services__cards">
+              <div class="services__card card-services">
+                <img src="assets/img/serv1.svg" alt="network" />
+                <h4 id="services-card-title-1">Home & Office network</h4>
+              </div>
+              <div class="services__card card-services">
+                <img src="assets/img/serv2.svg" alt="network" />
+                <h4 id="services-card-title-2">Operating Systems</h4>
+              </div>
+              <div class="services__card card-services">
+                <img src="assets/img/serv3.svg" alt="network" />
+                <h4 id="services-card-title-3">Servers</h4>
+              </div>
+              <div class="services__card card-services">
+                <img src="assets/img/serv4.svg" alt="network" />
+                <h4 id="services-card-title-4">Cloud Systems</h4>
+              </div>
+              <div class="services__card card-services">
+                <img src="assets/img/serv5.svg" alt="network" />
+                <h4 id="services-card-title-5">Camera Security</h4>
+              </div>
+              <div class="services__card card-services">
+                <img src="assets/img/serv6.svg" alt="network" />
+                <h4 id="services-card-title-6">IT Audit</h4>
+              </div>
+              <div class="services__card card-services">
+                <img src="assets/img/serv7.svg" alt="network" />
+                <h4 id="services-card-title-7">IT Security</h4>
+              </div>
+              <div class="services__card card-services">
+                <img src="assets/img/serv8.svg" alt="network" />
+                <h4 id="services-card-title-8">Virtualization</h4>
+              </div>
+              <div class="services__card card-services card-services__9">
+                <img src="assets/img/serv9.svg" alt="network" />
+                <h4 id="services-card-title-9">Backup & Restore</h4>
+              </div>
+              <div class="services__card card-services card-services__10">
+                <img src="assets/img/serv10.svg" alt="network" />
+                <h4 id="services-card-title-10">Computer Hardware</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contact">
+        <div class="footer__container _container">
+          <div class="footer__main">
+            <div class="footer__left">
+              <div class="footer__credits-area">
+                <img src="./assets/img/logo-black.png" alt="BITHOTEX" />
+                <div class="footer__ocean-studio">
+                  <a href="https://t.me/browixx" target="_blank">
+                    <img
+                      src="./assets/img/ocean-studio-logo.png"
+                      alt="Ocean Studio logo"
+                    />
+                  </a>
+                  <div>
+                    <p id="footer-made-by">Made by</p>
+                    <a href="https://t.me/browixx" target="_blank"
+                      >Ocean <br />
+                      Studio</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <nav class="footer__nav">
+                <h4 id="footer-title">Explore</h4>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#home" id="footer-home" class="footer__link"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a href="#why" id="footer-why" class="footer__link"
+                      >Why us</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a
+                      href="#services"
+                      id="footer-services"
+                      class="footer__link"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a href="#contact" id="footer-contact" class="footer__link"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__right">
+              <h4 id="footer-follow">Follow us</h4>
+              <ul class="footer__social-media">
+                <li class="footer__social-media-item">
+                  <a
+                    class="footer__social-media-link"
+                    href="https://wa.me/971585779967"
+                    target="_blank"
+                  >
+                    <img src="./assets/img/whatsapp.svg" alt="Whatsapp" />
+                  </a>
+                </li>
+                <li class="footer__social-media-item">
+                  <a
+                    class="footer__social-media-link"
+                    href="https://www.linkedin.com/company/bithotex-technology-l-l-c-fz/"
+                    target="_blank"
+                  >
+                    <img src="./assets/img/linkedin.svg" alt="Linkedin" />
+                  </a>
+                </li>
+                <li class="footer__social-media-item">
+                  <a
+                    class="footer__social-media-link"
+                    href="https://www.facebook.com/profile.php?id=61561311650930&rdid=i4oLJGo8jaCekn3g&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv2hkWxEm9odiLfTC%2F"
+                    target="_blank"
+                  >
+                    <img src="./assets/img/facebook.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="footer__social-media-item">
+                  <a
+                    class="footer__social-media-link"
+                    href="https://www.instagram.com/bhx_techno?utm_source=qr&igsh=Yjk2Z3o1emcxZHlm"
+                    target="_blank"
+                  >
+                    <img src="./assets/img/instagram.svg" alt="Instagram" />
+                  </a>
+                </li>
+                <li class="footer__social-media-item">
+                  <a
+                    class="footer__social-media-link"
+                    href="mailto:info@bithotex.com"
+                    target="_blank"
+                  >
+                    <img src="./assets/img/gmail.svg" alt="Mail" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p id="footer-rights">@2024 Bithotex. All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
